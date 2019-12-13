@@ -1,21 +1,17 @@
 import React from "react";
 import "./App.css";
+import { Route } from "react-router-dom";
+
+import LandingPage from "./components/LandingPage";
+import Taco from "./components/Taco";
+import Cocktail from "./components/Cocktail";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>SetList</h1>
-        <p>Find concerts for bands you love, wherever you are.</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Get Started
-        </a>
-      </header>
+    <div>
+      <Route exact path="/" component={LandingPage} />
+      <Route path="/home" component={Taco} />
+      <Route path="/cocktails" component={Cocktail} />
     </div>
   );
 }

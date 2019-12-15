@@ -5,7 +5,7 @@ function LandingPage() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>RandoTaco</h1>
+        <h1 className="landingHeader">RandoTaco</h1>
         <p>
           There are endless ways to make a taco. Let me generate a new recipe
           for ya.

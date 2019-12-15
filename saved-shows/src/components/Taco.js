@@ -1,15 +1,12 @@
 import React from "react";
 import "../App.css";
 import { getTacos } from "../actions";
-import { useSelector } from "react-redux";
 import Loader from "react-loader-spinner";
 import { connect } from "react-redux";
 
 import NavBar from "./NavBar";
 
 const TacoList = props => {
-  const { band, isFetching, error } = useSelector(state => state);
-
   return (
     <div className="App">
       <NavBar />

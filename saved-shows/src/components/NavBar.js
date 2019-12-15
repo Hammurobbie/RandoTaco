@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const NavDiv = styled.div`
@@ -30,19 +29,15 @@ const NavBar = () => {
   return (
     <div>
       <NavDiv>
-        <Link to="/">
-          <NavLinks>RandoTaco</NavLinks>
-        </Link>
+        <NavLinks className="navName" href="/">
+          RandoTaco
+        </NavLinks>
         <InnerNav>
           <div>
-            <Link to="/home">
-              <NavLinks>Home</NavLinks>
-            </Link>
+            <NavLinks href="/home">Home</NavLinks>
           </div>
           <div>
-            <Link to="/cocktails">
-              <NavLinks>Cocktails</NavLinks>
-            </Link>
+            <NavLinks href="/cocktails">Cocktails</NavLinks>
           </div>
         </InnerNav>
       </NavDiv>

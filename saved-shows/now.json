@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "saved-shows",
+  "builds": [
+    {
+      "src": "saved-shows/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "saved-shows/$1" }]
+}

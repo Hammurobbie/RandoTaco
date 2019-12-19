@@ -38,7 +38,7 @@ const reducer = (state = initialState, action) => {
     case FETCH_COCKTAIL_SUCCESS:
       return {
         ...state,
-        taco: action.payload,
+        cocktail: action.payload,
         isFetching: false,
         error: ""
       };
